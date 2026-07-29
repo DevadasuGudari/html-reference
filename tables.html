@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>HTML Tables</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <table class="header">
+
+        <tr>
+
+
+            <td class="logo">
+
+                <span>HTML Reference Hub</span>
+
+            </td>
+
+
+
+            <td class="nav-container">
+
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+                <div class="menu">
+
+
+                    <a href="index.html">Introduction</a>
+
+                    <a href="headings.html">Headings</a>
+
+                    <a href="paragraphs.html">Paragraphs</a>
+
+                    <a href="lists.html">Lists</a>
+
+                    <a href="tables.html">Tables</a>
+
+                    <a href="forms.html">Forms</a>
+
+                    <a href="multimedia.html">Multimedia</a>
+
+                    <a href="semantic.html">Semantic</a>
+
+                    <a href="hyperlinks.html">Hyperlinks</a>
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+    </table>
+
+
+
+
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <table class="content">
+
+
+        <tr>
+
+
+
+            <!-- SIDEBAR -->
+
+
+            <td class="sidebar">
+
+
+                <h3>HTML Tables</h3>
+
+
+
+                <ul>
+
+
+                    <li>
+                        <a href="#intro">
+                            <i class="fa-solid fa-table"></i>
+                            Introduction
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#syntax">
+                            <i class="fa-solid fa-code"></i>
+                            Syntax
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#example">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            Example
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#elements">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Table Elements
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#best">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            Best Practices
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </td>
+
+
+
+
+
+            <!-- MAIN CONTENT -->
+
+
+            <td class="main-content">
+
+
+
+                <h2 id="intro">
+
+                    HTML Tables
+
+                </h2>
+
+
+
+                <p>
+
+                    HTML tables are used to organize and display data in rows and columns.
+                    Tables help present structured information such as student records,
+                    employee details, schedules, and product information.
+
+                    A table is created using the
+                    <strong>&lt;table&gt;</strong> tag and contains rows
+                    <strong>&lt;tr&gt;</strong>, headings
+                    <strong>&lt;th&gt;</strong>, and data cells
+                    <strong>&lt;td&gt;</strong>.
+
+                </p>
+
+
+
+
+                <hr>
+
+
+
+
+                <h2 id="syntax">
+
+                    Table Syntax
+
+                </h2>
+
+
+
+                <pre>
+
+&lt;table&gt;
+
+    &lt;tr&gt;
+
+        &lt;th&gt;Name&lt;/th&gt;
+
+        &lt;th&gt;Course&lt;/th&gt;
+
+        &lt;th&gt;Year&lt;/th&gt;
+
+    &lt;/tr&gt;
+
+
+
+    &lt;tr&gt;
+
+        &lt;td&gt;John&lt;/td&gt;
+
+        &lt;td&gt;HTML&lt;/td&gt;
+
+        &lt;td&gt;2026&lt;/td&gt;
+
+    &lt;/tr&gt;
+
+
+&lt;/table&gt;
+
+</pre>
+
+
+
+
+                <hr>
+
+
+
+
+                <h2 id="example">
+
+                    Example
+
+                </h2>
+
+
+
+                <pre>
+
+&lt;table border="1"&gt;
+
+
+    &lt;tr&gt;
+
+        &lt;th&gt;Name&lt;/th&gt;
+
+        &lt;th&gt;Course&lt;/th&gt;
+
+        &lt;th&gt;Year&lt;/th&gt;
+
+    &lt;/tr&gt;
+
+
+
+    &lt;tr&gt;
+
+        &lt;td&gt;John&lt;/td&gt;
+
+        &lt;td&gt;HTML&lt;/td&gt;
+
+        &lt;td&gt;2026&lt;/td&gt;
+
+    &lt;/tr&gt;
+
+
+
+    &lt;tr&gt;
+
+        &lt;td&gt;David&lt;/td&gt;
+
+        &lt;td&gt;CSS&lt;/td&gt;
+
+        &lt;td&gt;2026&lt;/td&gt;
+
+    &lt;/tr&gt;
+
+
+&lt;/table&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    Output
+
+                </h3>
+
+
+
+
+                <table border="1" cellpadding="10">
+
+
+                    <tr>
+
+                        <th>Name</th>
+
+                        <th>Course</th>
+
+                        <th>Year</th>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>John</td>
+
+                        <td>HTML</td>
+
+                        <td>2026</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>David</td>
+
+                        <td>CSS</td>
+
+                        <td>2026</td>
+
+                    </tr>
+
+
+                </table>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="elements">
+
+                    Table Elements
+
+                </h2>
+
+
+
+
+                <p>
+
+                    HTML tables are created using different table elements:
+
+                </p>
+
+
+
+                <ul>
+
+
+                    <li>
+                        <strong>&lt;table&gt;</strong> - Creates a table.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;tr&gt;</strong> - Creates a table row.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;th&gt;</strong> - Creates a table heading.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;td&gt;</strong> - Creates a table data cell.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;caption&gt;</strong> - Adds a title to the table.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;thead&gt;</strong> - Defines table header section.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;tbody&gt;</strong> - Defines table body section.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;tfoot&gt;</strong> - Defines table footer section.
+                    </li>
+
+
+                </ul>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="best">
+
+                    Best Practices
+
+                </h2>
+
+
+
+
+                <ul>
+
+
+                    <li>
+                        Use tables only for displaying tabular data.
+                    </li>
+
+
+                    <li>
+                        Always use <strong>&lt;th&gt;</strong> for headings.
+                    </li>
+
+
+                    <li>
+                        Keep table information organized and readable.
+                    </li>
+
+
+                    <li>
+                        Use <strong>&lt;caption&gt;</strong> to describe tables.
+                    </li>
+
+
+                    <li>
+                        Avoid using tables for webpage layout.
+                    </li>
+
+
+                    <li>
+                        Use CSS for styling tables instead of HTML attributes.
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+            </td>
+
+
+
+        </tr>
+
+
+    </table>
+
+
+
+</body>
+
+</html>

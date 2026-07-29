@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body>
+
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <table class="header">
+
+        <tr>
+
+
+            <td class="logo">
+
+                <span>HTML Reference Hub</span>
+
+            </td>
+
+
+
+
+            <td class="nav-container">
+
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+                <div class="menu">
+
+
+                    <a href="index.html">Introduction</a>
+
+                    <a href="headings.html">Headings</a>
+
+                    <a href="paragraphs.html">Paragraphs</a>
+
+                    <a href="lists.html">Lists</a>
+
+                    <a href="tables.html">Tables</a>
+
+                    <a href="forms.html">Forms</a>
+
+                    <a href="multimedia.html">Multimedia</a>
+
+                    <a href="semantic.html">Semantic</a>
+
+                    <a href="hyperlinks.html">Hyperlinks</a>
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+
+
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <table class="content">
+
+
+        <tr>
+
+
+
+
+            <!-- SIDEBAR -->
+
+
+            <td class="sidebar">
+
+
+                <h3>HTML Forms</h3>
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="#intro">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            Introduction
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#elements">
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                            Form Elements
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#syntax">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            Syntax
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#example">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                            Example
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#best">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            Best Practices
+
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+            </td>
+
+
+
+
+
+
+
+            <!-- MAIN CONTENT -->
+
+
+            <td class="main-content">
+
+
+
+
+
+                <h2 id="intro">
+
+                    HTML Forms
+
+                </h2>
+
+
+
+
+                <p>
+
+
+                    HTML forms are used to collect information from users.
+                    Forms allow users to enter data such as names, email addresses,
+                    passwords, phone numbers, feedback, and other details.
+
+                    The collected data can be sent to a server for processing.
+
+                    The <strong>&lt;form&gt;</strong> tag is used to create a form,
+                    and it contains different input controls.
+
+
+                </p>
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="elements">
+
+                    Form Elements
+
+                </h2>
+
+
+
+
+                <p>
+
+                    HTML provides different form elements to collect various types
+                    of user input.
+
+                </p>
+
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        <strong>&lt;form&gt;</strong> - Creates a form.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;label&gt;</strong> - Defines a label for an input field.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;input&gt;</strong> - Creates an input box.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;textarea&gt;</strong> - Creates a multi-line text area.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;select&gt;</strong> - Creates a drop-down list.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;option&gt;</strong> - Defines options inside a select box.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>&lt;button&gt;</strong> - Creates a clickable button.
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="syntax">
+
+                    Form Syntax
+
+                </h2>
+
+
+
+
+                <pre>
+
+&lt;form&gt;
+
+
+    &lt;label&gt;Name&lt;/label&gt;
+
+    &lt;input type="text"&gt;
+
+
+
+    &lt;label&gt;Password&lt;/label&gt;
+
+    &lt;input type="password"&gt;
+
+
+
+    &lt;button&gt;Submit&lt;/button&gt;
+
+
+&lt;/form&gt;
+
+
+</pre>
+
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="example">
+
+                    Example
+
+                </h2>
+
+
+
+
+                <pre>
+
+&lt;form&gt;
+
+
+    &lt;label&gt;Name:&lt;/label&gt;
+
+    &lt;input type="text"&gt;
+
+
+
+    &lt;br&gt;&lt;br&gt;
+
+
+
+    &lt;label&gt;Email:&lt;/label&gt;
+
+    &lt;input type="email"&gt;
+
+
+
+    &lt;br&gt;&lt;br&gt;
+
+
+
+    &lt;label&gt;Password:&lt;/label&gt;
+
+    &lt;input type="password"&gt;
+
+
+
+    &lt;br&gt;&lt;br&gt;
+
+
+
+    &lt;button&gt;Submit&lt;/button&gt;
+
+
+
+&lt;/form&gt;
+
+
+</pre>
+
+
+
+
+
+
+                <h3>
+
+                    Output
+
+                </h3>
+
+
+
+
+                <form>
+
+
+                    <label>Name:</label>
+
+                    <br>
+
+                    <input type="text">
+
+
+
+                    <br><br>
+
+
+
+
+                    <label>Email:</label>
+
+                    <br>
+
+                    <input type="email">
+
+
+
+                    <br><br>
+
+
+
+
+                    <label>Password:</label>
+
+                    <br>
+
+                    <input type="password">
+
+
+
+                    <br><br>
+
+
+
+
+                    <button>
+
+                        Submit
+
+                    </button>
+
+
+
+                </form>
+
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="best">
+
+                    Best Practices
+
+                </h2>
+
+
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        Use labels for every input field.
+
+                    </li>
+
+
+                    <li>
+
+                        Choose correct input types like text, email, and password.
+
+                    </li>
+
+
+                    <li>
+
+                        Keep forms simple and user friendly.
+
+                    </li>
+
+
+                    <li>
+
+                        Group related fields together.
+
+                    </li>
+
+
+                    <li>
+
+                        Use meaningful button names like Submit or Register.
+
+                    </li>
+
+
+                    <li>
+
+                        Validate user input before processing the form.
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+
+
+
+            </td>
+
+
+
+        </tr>
+
+
+
+    </table>
+
+
+
+
+</body>
+
+
+</html>

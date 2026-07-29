@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>HTML Hyperlinks</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <table class="header">
+
+        <tr>
+
+
+            <td class="logo">
+
+
+                <span>HTML Reference Hub</span>
+
+            </td>
+
+
+
+            <td class="nav-container">
+
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+                <div class="menu">
+
+
+                    <a href="index.html">Introduction</a>
+
+                    <a href="headings.html">Headings</a>
+
+                    <a href="paragraphs.html">Paragraphs</a>
+
+                    <a href="lists.html">Lists</a>
+
+                    <a href="tables.html">Tables</a>
+
+                    <a href="forms.html">Forms</a>
+
+                    <a href="multimedia.html">Multimedia</a>
+
+                    <a href="semantic.html">Semantic</a>
+
+                    <a href="hyperlinks.html">Hyperlinks</a>
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+    </table>
+
+
+
+
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <table class="content">
+
+
+        <tr>
+
+
+
+            <!-- SIDEBAR -->
+
+
+            <td class="sidebar">
+
+
+                <h3>HTML Hyperlinks</h3>
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="#intro">
+
+                            <i class="fa-solid fa-link"></i>
+
+                            Introduction
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#syntax">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            Syntax
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#types">
+
+                            <i class="fa-solid fa-list"></i>
+
+                            Types of Links
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#example">
+
+                            <i class="fa-solid fa-file-code"></i>
+
+                            Example
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#attributes">
+
+                            <i class="fa-solid fa-gears"></i>
+
+                            Attributes
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#best">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            Best Practices
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </td>
+
+
+
+
+
+            <!-- MAIN CONTENT -->
+
+
+            <td class="main-content">
+
+
+
+                <h2 id="intro">
+
+                    HTML Hyperlinks
+
+                </h2>
+
+
+
+                <p>
+
+                    HTML hyperlinks are used to connect one webpage to another.
+                    They allow users to navigate between pages, websites, documents,
+                    images, email addresses, and specific sections within a webpage.
+
+                    Hyperlinks are created using the
+                    <strong>&lt;a&gt;</strong> (anchor) tag.
+
+                </p>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="syntax">
+
+                    Syntax
+
+                </h2>
+
+
+
+                <pre>
+
+&lt;a href="URL"&gt;
+
+    Link Text
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="types">
+
+                    Types of Hyperlinks
+
+                </h2>
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        <strong>External Links</strong> -
+                        Links to another website.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>Internal Links</strong> -
+                        Links between pages of the same website.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>Email Links</strong> -
+                        Used to open email applications.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>Telephone Links</strong> -
+                        Used to make phone calls.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>Bookmark Links</strong> -
+                        Links to specific sections of a webpage.
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="example">
+
+                    Examples
+
+                </h2>
+
+
+
+                <h3>
+
+                    1. External Link
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;a href="https://www.google.com"&gt;
+
+Google
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    2. Internal Link
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;a href="about.html"&gt;
+
+About Us
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    3. Email Link
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;a href="mailto:info@example.com"&gt;
+
+Send Email
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    4. Telephone Link
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;a href="tel:+919876543210"&gt;
+
+Call Us
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    5. Bookmark Link
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;a href="#top"&gt;
+
+Go to Top
+
+&lt;/a&gt;
+
+</pre>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="attributes">
+
+                    Anchor Tag Attributes
+
+                </h2>
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        <strong>href</strong> -
+                        Specifies the destination URL.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>target</strong> -
+                        Opens the link in a new or same tab.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>title</strong> -
+                        Displays tooltip text.
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>download</strong> -
+                        Downloads the linked file.
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="best">
+
+                    Best Practices
+
+                </h2>
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        Use meaningful link text.
+
+                    </li>
+
+
+                    <li>
+
+                        Always provide a valid
+                        <strong>href</strong> value.
+
+                    </li>
+
+
+                    <li>
+
+                        Use
+                        <strong>target="_blank"</strong>
+                        for external websites.
+
+                    </li>
+
+
+                    <li>
+
+                        Use relative links for pages inside your website.
+
+                    </li>
+
+
+                    <li>
+
+                        Avoid using "Click Here" as link text.
+
+                    </li>
+
+
+                    <li>
+
+                        Keep hyperlinks easy to identify.
+
+                    </li>
+
+
+                </ul>
+
+
+
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>

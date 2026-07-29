@@ -1,0 +1,945 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+
+}
+
+
+/* ================= HEADER ================= */
+
+
+.header{
+
+    width:100%;
+    border-collapse:collapse;
+
+    background:linear-gradient(
+        135deg,
+        #6c5ce7,
+        #00cec9,
+        #0984e3
+    );
+
+    background-size:400% 400%;
+
+    animation:headerGradient 12s ease infinite;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+}
+
+
+
+.header td{
+
+    padding:18px 20px;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:white;
+
+    white-space:nowrap;
+
+}
+
+
+
+.logo img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.nav-container{
+
+    width:80%;
+
+    text-align:right;
+
+}
+
+
+
+/* ================= MENU TOGGLE ================= */
+
+
+.menu-toggle{
+
+    display:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* desktop menu */
+
+
+.menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:5px;
+
+}
+
+
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:10px 12px;
+
+    border-radius:8px;
+
+    transition:.3s ease;
+
+}
+
+
+
+.menu a:hover{
+
+    background:rgba(255,255,255,.25);
+
+    color:#ffd700;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* ================= CONTENT ================= */
+
+
+.content{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:95px;
+
+}
+
+
+
+.content tr{
+
+    vertical-align:top;
+
+}
+
+
+/* ================= SIDEBAR ================= */
+
+
+.sidebar{
+
+    position:fixed;
+
+    top:120px;
+
+    left:10px;
+
+    width:18%;
+
+    padding:15px;
+
+}
+
+
+
+.sidebar h3{
+
+    text-align:center;
+
+    color:#2c3e50;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+
+
+.sidebar li{
+
+    margin:12px 0;
+
+}
+
+
+
+.sidebar a{
+
+    position:relative;
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#333;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    z-index:1;
+
+    transition:.4s ease;
+
+}
+
+
+
+.sidebar a::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        135deg,
+        #6c5ce7,
+        #00cec9,
+        #0984e3
+    );
+
+    transition:.4s ease;
+
+    z-index:-1;
+
+}
+
+
+
+.sidebar a:hover::before{
+
+    left:0;
+
+}
+
+
+
+.sidebar a:hover{
+
+    color:white;
+
+    box-shadow:0 6px 15px rgba(9,132,227,.35);
+
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+
+.main-content{
+
+    width:82%;
+
+    margin-left:18%;
+
+    background:white;
+
+    padding:30px;
+
+}
+
+
+
+.main-content h2{
+
+    color:#2c3e50;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.main-content h3{
+
+    color:#34495e;
+
+    font-size:24px;
+
+    margin:25px 0 15px;
+
+}
+
+
+
+.main-content p{
+
+    line-height:28px;
+
+    text-align:justify;
+
+    font-size:16px;
+
+}
+
+
+
+.main-content ul{
+
+    padding-left:25px;
+
+    line-height:2;
+
+}
+
+
+
+pre{
+
+    background:#2d3436;
+
+    color:white;
+
+    padding:20px;
+
+    border-left:5px solid #3498db;
+
+    border-radius:12px;
+
+    overflow:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+hr{
+
+    margin:35px 0;
+
+    border:0;
+
+    border-top:1px solid #ccc;
+
+}
+
+/* ================= ANIMATIONS ================= */
+
+
+@keyframes headerGradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    25%{
+        background-position:50% 100%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    75%{
+        background-position:50% 0%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* ================= TABLET DEVICES ================= */
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+
+    .logo{
+
+        font-size:20px;
+
+    }
+
+
+    .menu{
+
+        gap:2px;
+
+    }
+
+
+    .menu a{
+
+        font-size:13px;
+
+        padding:8px;
+
+    }
+
+
+    .sidebar{
+
+        width:22%;
+
+    }
+
+
+    .main-content{
+
+        width:78%;
+
+        margin-left:22%;
+
+        padding:25px;
+
+    }
+
+
+    .main-content h2{
+
+        font-size:28px;
+
+    }
+
+
+}
+
+
+
+
+/* ================= MOBILE 425px ================= */
+
+
+@media screen and (min-width:425px) and (max-width:767px){
+
+
+    .header td{
+
+        padding:12px;
+
+    }
+
+
+
+    .logo{
+
+        font-size:18px;
+
+    }
+
+
+
+    .logo img{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+
+
+    .nav-container{
+
+        position:relative;
+
+        width:auto;
+
+    }
+
+
+
+    .menu-toggle{
+
+        display:block;
+
+        text-align:right;
+
+    }
+
+
+
+    .menu{
+
+        position:absolute;
+
+        top:55px;
+
+        right:0;
+
+        width:230px;
+
+        background:#6c5ce7;
+
+        display:none;
+
+        flex-direction:column;
+
+        padding:15px;
+
+        border-radius:10px;
+
+        box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    }
+
+
+
+    /* Hover menu open */
+
+    .nav-container:hover .menu{
+
+        display:flex;
+
+    }
+
+
+
+    .menu a{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:12px;
+
+    }
+
+
+
+    .content{
+
+        margin-top:80px;
+
+    }
+
+
+
+    .sidebar{
+
+        position:relative;
+
+        top:auto;
+
+        left:auto;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+
+
+    .main-content{
+
+        width:100%;
+
+        margin-left:0;
+
+        padding:20px;
+
+    }
+
+
+
+    .main-content h2{
+
+        font-size:26px;
+
+    }
+
+
+
+    .main-content h3{
+
+        font-size:21px;
+
+    }
+
+
+}
+
+
+
+
+/* ================= MOBILE 375px ================= */
+
+
+@media screen and (min-width:375px) and (max-width:424px){
+
+
+    .header{
+
+        height:auto;
+
+    }
+
+
+
+    .header td{
+
+        padding:10px;
+
+    }
+
+
+
+    .logo{
+
+        font-size:16px;
+
+        gap:8px;
+
+    }
+
+
+
+    .logo img{
+
+        width:35px;
+
+        height:35px;
+
+    }
+
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+
+    .menu{
+
+        position:absolute;
+
+        right:10px;
+
+        top:55px;
+
+        width:220px;
+
+        background:#0984e3;
+
+        display:none;
+
+        flex-direction:column;
+
+        border-radius:10px;
+
+        padding:10px;
+
+    }
+
+
+
+    .nav-container:hover .menu{
+
+        display:flex;
+
+    }
+
+
+
+    .menu a{
+
+        font-size:14px;
+
+        padding:10px;
+
+    }
+
+
+
+    .content{
+
+        display:block;
+
+        margin-top:75px;
+
+    }
+
+
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        top:0;
+
+        left:0;
+
+    }
+
+
+
+    .main-content{
+
+        width:100%;
+
+        margin-left:0;
+
+        padding:15px;
+
+    }
+
+
+
+    .main-content h2{
+
+        font-size:24px;
+
+    }
+
+
+
+    pre{
+
+        font-size:13px;
+
+        padding:15px;
+
+    }
+
+
+}
+
+
+
+
+/* ================= MOBILE 320px ================= */
+
+
+@media screen and (min-width:320px) and (max-width:374px){
+
+
+    .header td{
+
+        padding:8px;
+
+    }
+
+
+
+    .logo{
+
+        font-size:14px;
+
+        gap:5px;
+
+    }
+
+
+
+    .logo img{
+
+        width:32px;
+
+        height:32px;
+
+    }
+
+
+
+    .menu-toggle{
+
+        display:block;
+
+        font-size:24px;
+
+    }
+
+
+
+    .menu{
+
+        position:absolute;
+
+        top:48px;
+
+        right:5px;
+
+        width:190px;
+
+        background:#6c5ce7;
+
+        display:none;
+
+        flex-direction:column;
+
+        padding:8px;
+
+        border-radius:8px;
+
+    }
+
+
+
+    .nav-container:hover .menu{
+
+        display:flex;
+
+    }
+
+
+
+    .menu a{
+
+        font-size:12px;
+
+        padding:8px;
+
+    }
+
+
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        padding:10px;
+
+    }
+
+
+
+    .sidebar h3{
+
+        font-size:18px;
+
+    }
+
+
+
+    .main-content{
+
+        width:100%;
+
+        margin-left:0;
+
+        padding:12px;
+
+    }
+
+
+
+    .main-content h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    .main-content h3{
+
+        font-size:18px;
+
+    }
+
+
+
+    .main-content p{
+
+        font-size:14px;
+
+        line-height:24px;
+
+    }
+
+
+
+    pre{
+
+        font-size:11px;
+
+        padding:12px;
+
+    }
+
+
+}

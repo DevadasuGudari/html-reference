@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>HTML Multimedia</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body>
+
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <table class="header">
+
+        <tr>
+
+
+            <td class="logo">
+
+                <span>HTML Reference Hub</span>
+
+            </td>
+
+
+
+
+            <td class="nav-container">
+
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+                <div class="menu">
+
+
+                    <a href="index.html">Introduction</a>
+
+                    <a href="headings.html">Headings</a>
+
+                    <a href="paragraphs.html">Paragraphs</a>
+
+                    <a href="lists.html">Lists</a>
+
+                    <a href="tables.html">Tables</a>
+
+                    <a href="forms.html">Forms</a>
+
+                    <a href="multimedia.html">Multimedia</a>
+
+                    <a href="semantic.html">Semantic</a>
+
+                    <a href="hyperlinks.html">Hyperlinks</a>
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <table class="content">
+
+
+        <tr>
+
+
+
+
+            <!-- SIDEBAR -->
+
+
+            <td class="sidebar">
+
+
+                <h3>HTML Multimedia</h3>
+
+
+
+
+                <ul>
+
+
+
+                    <li>
+
+                        <a href="#intro">
+
+                            <i class="fa-solid fa-photo-film"></i>
+
+                            Introduction
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="#image">
+
+                            <i class="fa-solid fa-image"></i>
+
+                            Images
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#audio">
+
+                            <i class="fa-solid fa-volume-high"></i>
+
+                            Audio
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#video">
+
+                            <i class="fa-solid fa-video"></i>
+
+                            Video
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#iframe">
+
+                            <i class="fa-solid fa-window-maximize"></i>
+
+                            Iframe
+
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li>
+
+                        <a href="#best">
+
+                            <i class="fa-solid fa-thumbs-up"></i>
+
+                            Best Practices
+
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+            </td>
+
+
+
+
+
+
+
+
+            <!-- MAIN CONTENT -->
+
+
+            <td class="main-content">
+
+
+
+
+
+                <h2 id="intro">
+
+                    HTML Multimedia
+
+                </h2>
+
+
+
+
+                <p>
+
+                    HTML multimedia allows developers to add images, audio,
+                    videos, and embedded webpages to websites.
+
+                    Multimedia makes webpages more attractive, interactive,
+                    and informative.
+
+                    HTML provides different tags to display multimedia content
+                    without requiring external plugins.
+
+                </p>
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="image">
+
+                    HTML Images
+
+                </h2>
+
+
+
+
+                <p>
+
+                    The <strong>&lt;img&gt;</strong> tag is used to display images
+                    on a webpage.
+
+                    The <strong>src</strong> attribute specifies the image path,
+                    and the <strong>alt</strong> attribute provides alternative text
+                    for accessibility.
+
+                </p>
+
+
+
+
+                <h3>
+
+                    Syntax
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;img src="image.jpg"
+
+alt="Example Image"&gt;
+
+</pre>
+
+
+
+
+                <h3>
+
+                    Example
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;img src="nature.jpg"
+
+alt="Nature Image"
+
+width="300"&gt;
+
+</pre>
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="audio">
+
+                    HTML Audio
+
+                </h2>
+
+
+
+
+                <p>
+
+                    The <strong>&lt;audio&gt;</strong> tag is used to add sound files
+                    such as music and voice recordings to webpages.
+
+                    The <strong>controls</strong> attribute provides play,
+                    pause, and volume controls.
+
+                </p>
+
+
+
+
+                <h3>
+
+                    Syntax
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;audio controls&gt;
+
+
+    &lt;source src="music.mp3"
+
+    type="audio/mpeg"&gt;
+
+
+&lt;/audio&gt;
+
+</pre>
+
+
+
+
+
+                <h3>
+
+                    Example
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;audio controls&gt;
+
+
+    &lt;source src="song.mp3"
+
+    type="audio/mpeg"&gt;
+
+
+&lt;/audio&gt;
+
+</pre>
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="video">
+
+                    HTML Video
+
+                </h2>
+
+
+
+
+                <p>
+
+                    The <strong>&lt;video&gt;</strong> tag is used to display videos
+                    on webpages.
+
+                    The <strong>controls</strong> attribute provides playback
+                    features like play, pause, and fullscreen.
+
+                </p>
+
+
+
+
+                <h3>
+
+                    Syntax
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;video controls&gt;
+
+
+    &lt;source src="movie.mp4"
+
+    type="video/mp4"&gt;
+
+
+&lt;/video&gt;
+
+</pre>
+
+
+
+
+
+                <h3>
+
+                    Example
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;video width="400" controls&gt;
+
+
+    &lt;source src="sample.mp4"
+
+    type="video/mp4"&gt;
+
+
+&lt;/video&gt;
+
+</pre>
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="iframe">
+
+                    HTML Iframe
+
+                </h2>
+
+
+
+
+                <p>
+
+                    The <strong>&lt;iframe&gt;</strong> tag is used to embed
+                    another webpage, map, or video inside the current webpage.
+
+                    It is commonly used for YouTube videos and Google Maps.
+
+                </p>
+
+
+
+
+                <h3>
+
+                    Syntax
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;iframe src="page.html"&gt;
+
+&lt;/iframe&gt;
+
+</pre>
+
+
+
+
+
+                <h3>
+
+                    Example
+
+                </h3>
+
+
+
+                <pre>
+
+&lt;iframe
+
+src="https://example.com"
+
+width="500"
+
+height="300"&gt;
+
+
+&lt;/iframe&gt;
+
+</pre>
+
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+                <h2 id="best">
+
+                    Best Practices
+
+                </h2>
+
+
+
+
+
+                <ul>
+
+
+                    <li>
+
+                        Always provide the <strong>alt</strong> attribute for images.
+
+                    </li>
+
+
+                    <li>
+
+                        Compress images, audio, and videos for faster loading.
+
+                    </li>
+
+
+                    <li>
+
+                        Use the <strong>controls</strong> attribute for audio and video.
+
+                    </li>
+
+
+                    <li>
+
+                        Specify correct file types in the source tag.
+
+                    </li>
+
+
+                    <li>
+
+                        Use iframes only from trusted websites.
+
+                    </li>
+
+
+                    <li>
+
+                        Keep multimedia content related to webpage content.
+
+                    </li>
+
+
+
+                </ul>
+
+
+
+
+
+
+
+            </td>
+
+
+
+        </tr>
+
+
+
+    </table>
+
+
+
+
+</body>
+
+
+</html>

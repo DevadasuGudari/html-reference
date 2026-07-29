@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>HTML Semantic Elements</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+
+    <table class="header">
+
+        <tr>
+
+
+            <td class="logo">
+
+                <span>HTML Reference Hub</span>
+
+            </td>
+
+
+
+            <td class="nav-container">
+
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+                <div class="menu">
+
+
+                    <a href="index.html">Introduction</a>
+
+                    <a href="headings.html">Headings</a>
+
+                    <a href="paragraphs.html">Paragraphs</a>
+
+                    <a href="lists.html">Lists</a>
+
+                    <a href="tables.html">Tables</a>
+
+                    <a href="forms.html">Forms</a>
+
+                    <a href="multimedia.html">Multimedia</a>
+
+                    <a href="semantic.html">Semantic</a>
+
+                    <a href="hyperlinks.html">Hyperlinks</a>
+
+
+                </div>
+
+
+            </td>
+
+
+        </tr>
+
+    </table>
+
+
+
+
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <table class="content">
+
+
+        <tr>
+
+
+
+            <!-- SIDEBAR -->
+
+
+            <td class="sidebar">
+
+
+                <h3>Semantic HTML</h3>
+
+
+                <ul>
+
+
+                    <li>
+                        <a href="#intro">
+                            <i class="fa-solid fa-code"></i>
+                            Introduction
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#elements">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Semantic Elements
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#syntax">
+                            <i class="fa-solid fa-file-code"></i>
+                            Syntax
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#example">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            Example
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#benefits">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Benefits
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#best">
+                            <i class="fa-solid fa-star"></i>
+                            Best Practices
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </td>
+
+
+
+
+
+            <!-- MAIN CONTENT -->
+
+
+            <td class="main-content">
+
+
+
+                <h2 id="intro">
+
+                    HTML Semantic Elements
+
+                </h2>
+
+
+
+                <p>
+
+                    Semantic HTML elements clearly describe the meaning of the content they contain.
+                    They help browsers, developers, and search engines understand the structure of a webpage.
+                    Semantic elements make websites easier to read, maintain, and improve accessibility
+                    for users.
+
+                </p>
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="elements">
+
+                    Common Semantic Elements
+
+                </h2>
+
+
+
+                <p>
+
+                    HTML5 introduced several semantic elements that describe different parts of a webpage.
+
+                </p>
+
+
+
+                <ul>
+
+                    <li>
+                        <strong>&lt;header&gt;</strong> -
+                        Defines the header section of a webpage.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;nav&gt;</strong> -
+                        Defines navigation links.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;main&gt;</strong> -
+                        Defines the main content of a webpage.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;section&gt;</strong> -
+                        Defines a section of related content.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;article&gt;</strong> -
+                        Defines independent content like articles or blog posts.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;aside&gt;</strong> -
+                        Defines sidebar or additional information.
+                    </li>
+
+
+                    <li>
+                        <strong>&lt;footer&gt;</strong> -
+                        Defines the footer section.
+                    </li>
+
+
+                </ul>
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="syntax">
+
+                    Syntax
+
+                </h2>
+
+
+
+                <pre>
+
+&lt;header&gt;
+
+Website Header
+
+&lt;/header&gt;
+
+
+&lt;nav&gt;
+
+Navigation Menu
+
+&lt;/nav&gt;
+
+
+&lt;main&gt;
+
+Main Content
+
+&lt;/main&gt;
+
+
+&lt;footer&gt;
+
+Website Footer
+
+&lt;/footer&gt;
+
+</pre>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="example">
+
+                    Example
+
+                </h2>
+
+
+
+                <pre>
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+
+&lt;head&gt;
+
+&lt;title&gt;Semantic HTML&lt;/title&gt;
+
+&lt;/head&gt;
+
+
+
+&lt;body&gt;
+
+
+
+&lt;header&gt;
+
+Website Header
+
+&lt;/header&gt;
+
+
+
+&lt;nav&gt;
+
+Home | About | Contact
+
+&lt;/nav&gt;
+
+
+
+&lt;main&gt;
+
+
+
+&lt;section&gt;
+
+
+&lt;h2&gt;Welcome&lt;/h2&gt;
+
+
+&lt;p&gt;
+
+This is the main content.
+
+&lt;/p&gt;
+
+
+
+&lt;/section&gt;
+
+
+
+&lt;/main&gt;
+
+
+
+&lt;footer&gt;
+
+Copyright 2026
+
+&lt;/footer&gt;
+
+
+
+&lt;/body&gt;
+
+
+
+&lt;/html&gt;
+
+</pre>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="benefits">
+
+                    Benefits of Semantic HTML
+
+                </h2>
+
+
+
+                <ul>
+
+
+                    <li>
+                        Improves Search Engine Optimization (SEO).
+                    </li>
+
+
+                    <li>
+                        Makes HTML code easier to read and maintain.
+                    </li>
+
+
+                    <li>
+                        Improves accessibility for screen readers.
+                    </li>
+
+
+                    <li>
+                        Helps search engines understand webpage structure.
+                    </li>
+
+
+                    <li>
+                        Creates an organized webpage layout.
+                    </li>
+
+
+                    <li>
+                        Improves code readability for developers.
+                    </li>
+
+
+                </ul>
+
+
+
+
+                <hr>
+
+
+
+
+
+                <h2 id="best">
+
+                    Best Practices
+
+                </h2>
+
+
+
+                <ul>
+
+
+                    <li>
+                        Use semantic elements instead of unnecessary
+                        <strong>&lt;div&gt;</strong> tags.
+                    </li>
+
+
+                    <li>
+                        Use only one <strong>&lt;main&gt;</strong> element per webpage.
+                    </li>
+
+
+                    <li>
+                        Place navigation links inside the
+                        <strong>&lt;nav&gt;</strong> element.
+                    </li>
+
+
+                    <li>
+                        Use <strong>&lt;header&gt;</strong> and
+                        <strong>&lt;footer&gt;</strong> for page structure.
+                    </li>
+
+
+                    <li>
+                        Organize related content using
+                        <strong>&lt;section&gt;</strong> and
+                        <strong>&lt;article&gt;</strong>.
+                    </li>
+
+
+                    <li>
+                        Write meaningful and accessible HTML structure.
+                    </li>
+
+
+                </ul>
+
+
+
+            </td>
+
+
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>
