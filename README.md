@@ -132,7 +132,7 @@ This project is compatible with all modern web browsers, including:
 
 **Gudari Devadasu**
 
-GitHub: https://github.com/Devadasu6305
+GitHub: https://github.com/DevadasuGudari
 
 ---
 
