@@ -6,7 +6,7 @@ A modern, responsive, and beginner-friendly **HTML Reference Website** built usi
 
 ## 📖 Overview
 
-The HTML Reference Website is an educational project that provides a structured collection of HTML topics in a simple and user-friendly format. Each concept is presented on a dedicated page, allowing users to explore HTML step by step. The website features a modern interface, responsive layout, and consistent styling to create an enjoyable learning experience.
+The HTML  Reference Website is an educational project that provides a structured collection of HTML topics in a simple and user-friendly format. Each concept is presented on a dedicated page, allowing users to explore HTML step by step. The website features a modern interface, responsive layout, and consistent styling to create an enjoyable learning experience.
 
 ---
 
